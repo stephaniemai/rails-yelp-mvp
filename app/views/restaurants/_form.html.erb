@@ -1,0 +1,8 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name, placeholder: 'your name' %>
+  <%= f.input :address, placeholder: '2 rue des Pommes' %>
+  <%= f.input :category, collection: Restaurant::CATEGORIES %>
+  <%= f.input :phone_number, placeholder: '+33 4 53 43 43 43' %>
+  <%= f.submit %>
+<% end %>
+

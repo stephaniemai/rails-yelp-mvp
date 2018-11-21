@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: %i(show)
+  before_action :set_restaurant, only: %i[show]
 
   def index
     @restaurants = Restaurant.all
@@ -7,6 +7,7 @@ class RestaurantsController < ApplicationController
 
   def new
     @restaurant = Restaurant.new
+    # @categories = %w[chinese italian japanese french belgian]
   end
 
   def create
