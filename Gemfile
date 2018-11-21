@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Use Faker to generate data
+gem 'faker'
+
 # style
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 5.0.9'
